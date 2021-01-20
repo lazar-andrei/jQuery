@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    
+    <!-- displays site properly based on user's device -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- FontAwesome icons -->
+    <script src="https://kit.fontawesome.com/accc4403b9.js" crossorigin="anonymous"></script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Karla&family=Rubik&family=Spectral:wght@600&display=swap" rel="stylesheet">
+
+    <!--Eric Meyer reset -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+    
+    
+    
+    <!-- Add jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Add jQuery UI plug-ins-->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+    
+    <!-- JS file link -->
+    <script src="script.js" defer> </script>
+    <!-- CSS file link -->
+    <link rel="stylesheet" type="text/css" href="main.css">
+
+    <title>To do list</title>
+</head>
+
+<body>
+  <div class="title-continer">
+    <h1 class="title"> Lazar's <br> to do list </h1>
+    <div class="select-container select-container-mobile">
+      <select class="select select-mobile">
+      
+      <option value="all" class="all">All</option>
+      <option value="completed" class="compl">Completed</option>
+      <option value="uncompleted" class="uncompl">Uncompleted</option>
+      
+      </select>
+    </div>
+  </div>
+  <div class=container>
+  
+  <div class="form">
+    <input type="text" placeholder="Add a new task here...">
+    <button class="add-button"><i class="fas fa-plus"></i></button>
+    <div class="select-container select-container-desktop">
+    
+      <select class="select select-desktop">
+      
+      <option value="all" class="all">All</option>
+      <option value="completed" class="compl">Completed</option>
+      <option value="uncompleted" class="uncompl">Uncompleted</option>
+      
+    </select>
+  </div>
+  </div>
+
+  <div class="list-container">
+    <ul class="list">
+
+      <li class="todo completed"><span>Completed</span> <i class="fas fa-check check"></i><i class="fas fa-trash-alt remove-task"></i></li>
+
+      <li class="todo uncompleted"><span>Uncompleted</span> <i class="fas fa-check check"></i><i class="fas fa-trash-alt remove-task"></i></li>
+    </ul>
+
+  </div>
+
+
+  </div>
+</body>
+
+</html>

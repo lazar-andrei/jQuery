@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    
+    <!-- displays site properly based on user's device -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- FontAwesome icons -->
+    <script src="https://kit.fontawesome.com/accc4403b9.js" crossorigin="anonymous"></script>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
+
+    <!--Eric Meyer reset -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+    
+    
+    
+    <!-- Add jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Add jQuery UI plug-ins-->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+    
+    <!-- JS file link -->
+    <script src="script.js" defer> </script>
+    <!-- CSS file link -->
+    <link rel="stylesheet" type="text/css" href="main.css">
+
+    
+
+    <title>To do list</title>
+</head>
+
+<body>
+
+  <div class=container>
+    <h1 class="title"> To do List </h1>
+    <button id="btnAddProject">Add project</button>
+    <div class="tabs" id="tabs">
+      <ul id=main>
+        <li class="tab"> <a href="#home">Home</a><i class="fas fa-times"></i></li>
+        <li class="tab"> <a href="#work">Work</a><i class="fas fa-times"></i></li>
+      </ul>
+
+      
+        <ol id="home"> 
+          <li class="to-do"><input type="checkbox"> To do 1</li>
+          <li class="to-do"><input type="checkbox"> To do 2</li>
+          <li class="to-do"><input type="checkbox"> To do 3</li>
+        </ol>
+
+     
+
+      
+        <ol id="work"> 
+          <li class="to-do"><input type="checkbox"> To do 1</li>
+          <li class="to-do"><input type="checkbox"> To do 2</li>
+          <li class="to-do"><input type="checkbox"> To do 3</li>
+        </ol>
+
+      
+    </div>
+
+    <button id="btnAddTask">Add task</button>
+
+    <div id="project-dialog" title="Add new project">
+      <label for="new-project">New project:</label> <input id="new-project" type="text">
+    </div>
+
+    <div id="task-dialog" title="Add new task" style="display:none">
+      <label for="new-task">New task:</label> <input id="new-task" type="text">
+    </div>
+
+    </div>
+
+</body>
+
+</html>
